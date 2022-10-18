@@ -1,6 +1,6 @@
 <?php
 
-namespace Brightlocal\Box\Facades;
+namespace Maengkom\Box\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

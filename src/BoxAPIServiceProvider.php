@@ -1,6 +1,6 @@
 <?php
 
-namespace Brightlocal\Box;
+namespace Maengkom\Box;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -55,16 +55,16 @@ class BoxAPIServiceProvider extends ServiceProvider
     /**
      * Return ServiceProvider according to Laravel version
      *
-     * @return \Brightlocal\Box\Provider\ProviderInterface
+     * @return \Maengkom\Box\Provider\ProviderInterface
      */
     private function getProvider()
     {
         if ($this->app instanceof \Laravel\Lumen\Application) {
-            $provider = '\Brightlocal\Box\BoxAPIServiceProviderLumen';
+            $provider = '\Maengkom\Box\BoxAPIServiceProviderLumen';
         } elseif (version_compare(\Illuminate\Foundation\Application::VERSION, '5.0', '<')) {
-            $provider = '\Brightlocal\Box\BoxAPIServiceProviderLaravel4';
+            $provider = '\Maengkom\Box\BoxAPIServiceProviderLaravel4';
         } else {
-            $provider = '\Brightlocal\Box\BoxAPIServiceProviderLaravel5';
+            $provider = '\Maengkom\Box\BoxAPIServiceProviderLaravel5';
         }
         return new $provider($this->app);
     }

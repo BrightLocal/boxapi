@@ -1,6 +1,6 @@
 <?php
 
-namespace Brightlocal\Box;
+namespace Maengkom\Box;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -36,6 +36,6 @@ class BoxAPIServiceProviderLumen extends ServiceProvider
             return new BoxAppUser($config);
         });
 
-        $app->alias('boxappuser', 'Brightlocal\Box\BoxAppUser');
+        $app->alias('boxappuser', 'Maengkom\Box\BoxAppUser');
     }
 }

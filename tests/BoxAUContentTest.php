@@ -1,8 +1,8 @@
 <?php
 
-namespace Brightlocal\Box\Test;
+namespace Maengkom\Box\Test;
 
-use Brightlocal\Box\BoxAppuser;
+use Maengkom\Box\BoxAppuser;
 use PHPUnit_Framework_TestCase;
 
 require('vendor/autoload.php');

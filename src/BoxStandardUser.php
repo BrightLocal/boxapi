@@ -1,6 +1,6 @@
 <?php
 
-namespace Brightlocal\Box;
+namespace Maengkom\Box;
 
 class BoxStandardUser {
 
