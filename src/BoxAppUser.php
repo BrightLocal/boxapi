@@ -1,6 +1,6 @@
 <?php
 
-namespace Maengkom\Box;
+namespace Brightlocal\Box;
 
 use Config;
 use Lcobucci\JWT\Builder;

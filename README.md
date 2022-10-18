@@ -10,19 +10,19 @@ To install into your project just run this command in terminal
 	
 After download completed, you can add this to your app.php config file 
 
-	Maengkom\Box\BoxAPIServiceProvider::class, // Laravel 5
+	Brightlocal\Box\BoxAPIServiceProvider::class, // Laravel 5
 	
-	'Maengkom\Box\BoxAPIServiceProvider',      // Laravel 4
+	'Brightlocal\Box\BoxAPIServiceProvider',      // Laravel 4
 	
 And if you want using Facade, you can use these two facade
 
 	/* Laravel 5 */
-	'BoxAU'     => Maengkom\Box\Facades\AppUserFacade::class,
-	'BoxSU'     => Maengkom\Box\Facades\StandardUserFacade::class,
+	'BoxAU'     => Brightlocal\Box\Facades\AppUserFacade::class,
+	'BoxSU'     => Brightlocal\Box\Facades\StandardUserFacade::class,
 
 	/* Laravel 4 */
-	'BoxAU'     => 'Maengkom\Box\Facades\AppUserFacade',
-	'BoxSU'     => 'Maengkom\Box\Facades\StandardUserFacade',
+	'BoxAU'     => 'Brightlocal\Box\Facades\AppUserFacade',
+	'BoxSU'     => 'Brightlocal\Box\Facades\StandardUserFacade',
 	
 BoxAU is used for App User for Enterprise box account. BoxSU is used for normal box user to access their asset in their box account.
 
@@ -43,11 +43,11 @@ After install using composer, you need configure some in ```bootstrap/app.php```
 	$app->withFacades();
 	
 	// Add these line below to use Facade
-	class_alias('Maengkom\Box\Facades\AppUserFacade', 'BoxAU');
-	class_alias('Maengkom\Box\Facades\StandardUserFacade', 'BoxSU');
+	class_alias('Brightlocal\Box\Facades\AppUserFacade', 'BoxAU');
+	class_alias('Brightlocal\Box\Facades\StandardUserFacade', 'BoxSU');
 	
 	// Register this service provider
-	$app->register('Maengkom\Box\BoxAPIServiceProvider');
+	$app->register('Brightlocal\Box\BoxAPIServiceProvider');
 
 ## Common Installation
 
