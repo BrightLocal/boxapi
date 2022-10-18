@@ -1,7 +1,7 @@
 {
     "name": "brightlocal/boxapi",
-    "description": "Latest Box API for Standard User & App User",
-    "keywords": ["box", "boxapi", "laravel"],
+    "description": "Box API for Standard User & App User",
+    "keywords": ["box", "boxapi"],
     "license": "MIT",
     "type": "library",
     "homepage": "http://maengkom.com",
